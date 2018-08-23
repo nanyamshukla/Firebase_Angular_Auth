@@ -1,0 +1,32 @@
+{{checkUserInfo()}}
+<div *ngIf="!authService.isUserEmailLoggedIn">
+	<div>
+ 
+		<p *ngIf="errorMessage.length > 0" class="text-danger">
+			{{errorMessage}}</p>
+ 
+		<p *ngIf="error.message.length > 0" class="text-danger">
+			{{error.message}}</p>
+    
+
+        <div class="main_div" id="entry_page">
+            <h1>Welcome!</h1>
+            <h3>Please Enter the details below for authentication.</h3>
+            
+            <form (ngSubmit)="onLoginEmail()">
+                <label id="label_email" for="email">Email : </label>
+                <input type="text" placeholder="Email Address" id="email" name="email" required [(ngModel)]="email">
+                <label id="label_password" for="password">Password : </label>
+                <input type="password" placeholder="Password" id="password" name="password" required [(ngModel)]="password">
+                <button type="submit" id="btn_signIn">Sign-In</button>
+                <!---<button id="btn_signup" onclick="signUp()">Sign-Up</button>-->
+            </form>
+        </div>
+        <!--
+        <div class="exit_div" id="exit_page">
+            <h1 id="user_para">Successfully Logged-In</h1>
+            <button id="btn_logout" onclick="signOut()">Log-Out</button>
+        </div>
+        -->
+    </div>
+</div>

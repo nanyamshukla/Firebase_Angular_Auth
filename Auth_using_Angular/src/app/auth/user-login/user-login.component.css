@@ -1,0 +1,74 @@
+
+
+.main_div, .exit_div {
+    width: 30%;
+    margin: 0px auto;
+    margin-top: 10%;
+    text-align: center;
+    padding: 2.5%;
+    background-color: rgba(127, 196, 167, 0.281);
+    border: thin solid brown;
+}
+
+.main_div {
+    position: relative;
+    right: 0%;
+}
+
+form {
+    width: 100%;
+    position: relative;
+}
+
+form label {
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+#label_email {
+    top: 10%;
+    left: 8%;
+}
+#label_password {
+    top: 50%;
+}
+
+form input {
+    width: 65%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+}
+.main_div input:focus {
+    background-color: rgb(254, 227, 193,0.6);
+    border-color: slategray;
+}
+    
+.main_div button, .exit_div button {
+     display: block;
+     width: 100%;
+     border-radius: 5px;
+     padding: 10px;
+     margin: 5% 0;
+     cursor: pointer;
+     border: thin solid brown;
+     background-color: brown;;
+     color: bisque;
+     transition: 0.2s;
+     font-weight: 600;
+}
+button:hover {
+    background-color: rgb(126, 31, 31);
+}
+
+.text-danger {
+    position: absolute;
+    top: 85%;
+    left: 33%;
+    color: white;
+    font-size: 1.5rem;
+    width: 35%;
+}
